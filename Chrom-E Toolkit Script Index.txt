@@ -1,8 +1,0 @@
-Chrom-E Toolkit Script Index:
-
-- `chrom-e_cli_cleaner.sh` - Clear cache, package junk, and temporary files. (created)
-- `memory_report.sh` - Visualize your memory, swap, and process usage.
-- `disk_usage_report.sh` - Show top 20 space-hogging directories.
-- `chrom-e_healthcheck.sh` - Full diagnostic report (RAM, CPU, load avg).
-- `optimize_io.sh` - Boosts disk I/O performance with smart syncs and trim
-- `audio_flush.sh` - Clears PulseAudio caches and resets audio pipeline
