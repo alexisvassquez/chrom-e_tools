@@ -100,11 +100,13 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 
 ### For Automated Monthly Email Reports
 1. Configure your SMTP credentials in `~/.mailrc` (for automated monthly email reports in `send_usage_summary.sh`):
-    `set v15-compat
+    ```bash
+    set v15-compat
     set mta="smtp://your.email%40gmail.com:you_app_password@smtp.gmail.com:587"
-    set from="your.email@gmail.com (Your Name)"`
+    set from="your.email@gmail.com (Your Name)"
+    ```
 
-2. To run `send_usage_summary.sh` on the 1st of every month at 8:00 AM, add this line to your `crontab`:
+2. To run `send_usage_summary.sh` on the 1st of every month at 8:00 AM, add this line to your crontab:
     `0 8 1 * * /home/your_username/chrom-e_tools/scripts/send_usage_summary.sh >> /home/your_username/chrom-e_log/cron.log 2>&1`
 
 This will:
