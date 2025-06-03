@@ -66,19 +66,56 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 
 ---
 
-## Script Index (more coming soon!)
+## Script Index (more on the way)
 - `chrom-e_cli_cleaner.sh` - Clear cache, remove stale logs, clean apt packages, temporary files, and find what's eating your storage.
 - `memory_report.sh` - Visualize your memory, swap, and process usage.
 - `disk_usage_report.sh` - Show top 20 space-hogging directories.
+- `send_usage_summary.sh` - Generates a disk usage report, archives it, and emails an automated monthly report to recipient's configured address.
 - `chrom-e_healthcheck.sh` - Full diagnostic report (RAM, CPU, load avg).
 - `optimize_io.sh` - Boosts disk I/O performance with smart syncs and trim
 - `audio_flush.sh` - Clears PulseAudio caches and resets audio pipeline
+- `--bootles-wootles` - Silent mode in scripts for automation
+
+---
 
 ## Requirements
-- Bash
+- Bash (v4.0+ recommended)
+- GNU Coreutils (`df`, `du`, `sort`, `grep`, etc.)
+- sudo privileges (for accurate `du` readings on system directories)
 - `htop` (optional, for advanced process stats)
+- `s-nail` (or a modern `mailx` implementation with SMTP support)
+- `cron` (for automated monthly reporting)
+
+---
+
+## Setup
+- Clone the repo:
+    ```bash
+    git clone https://github.com/alexisvassquez/chrom-e_tools.git
+    cd chrom-e_tools
+    ```
+
+- Make the scripts executable
+    `chmod +x SCRIPT_NAME.sh`
+
+### For Automated Monthly Email Reports
+1. Configure your SMTP credentials in `~/.mailrc` (for automated monthly email reports in `send_usage_summary.sh`):
+    `set v15-compat
+    set mta="smtp://your.email%40gmail.com:you_app_password@smtp.gmail.com:587"
+    set from="your.email@gmail.com (Your Name)"`
+
+2. To run `send_usage_summary.sh` on the 1st of every month at 8:00 AM, add this line to your `crontab`:
+    `0 8 1 * * /home/your_username/chrom-e_tools/scripts/send_usage_summary.sh >> /home/your_username/chrom-e_log/cron.log 2>&1`
+
+This will:
+- Generate a disk usage report silently
+- Email report to the configured address
+- Archive it localled in `~/chrom-e_log/archive`
+
+---
 
 ## License
 MIT License
 Copyright (c) and maintained by [Alexis M Vasquez](https://github.com/alexisvassquez), *Full-Stack Software Engineer, Coding Enthusiast.*
 Permission is hereby granted, free of charge, to any person obtaining a copy.
+
