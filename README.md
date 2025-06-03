@@ -104,7 +104,7 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 1. Configure your SMTP credentials in `~/.mailrc` (for automated monthly email reports in `send_usage_summary.sh`):
     ```bash
     set v15-compat
-    set mta="smtp://your.email%40gmail.com:you_app_password@smtp.gmail.com:587"
+    set mta="smtp://your.email%40gmail.com:your_app_password@smtp.gmail.com:587"
     set from="your.email@gmail.com (Your Name)"
     ```
 
