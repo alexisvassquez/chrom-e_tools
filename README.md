@@ -96,7 +96,9 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
     ```
 
 - Make the scripts executable
-    `chmod +x SCRIPT_NAME.sh`
+    ```bash
+    chmod +x SCRIPT_NAME.sh`
+    ```
 
 ### For Automated Monthly Email Reports
 1. Configure your SMTP credentials in `~/.mailrc` (for automated monthly email reports in `send_usage_summary.sh`):
