@@ -106,7 +106,7 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
     set from="your.email@gmail.com (Your Name)"
     ```
 
-2. To run `send_usage_summary.sh` on the 1st of every month at 8:00 AM, add this line to your crontab:
+2. To run `send_usage_summary.sh` on the 1st of every month at 8:00 AM, add this line to your `crontab`:
    ```bash
    0 8 1 * * /home/your_username/chrom-e_tools/scripts/send_usage_summary.sh >> /home/your_username/chrom-e_log/cron.log 2>&1`
    ```
