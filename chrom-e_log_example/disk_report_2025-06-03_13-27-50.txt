@@ -1,0 +1,35 @@
+----------------------------------------
+📦 DISK USAGE REPORT - Tue Jun  3 01:27:50 PM EDT 2025
+----------------------------------------
+
+🧠 Overall Filesystem Usage:
+total            91G   64G   26G  72% -
+
+🗂️ Top 20 Largest Directories in/:
+37G	/
+22G	/home
+5.5G	/mnt
+4.3G	/usr
+3.2G	/opt
+599M	/var
+28M	/root
+8.0M	/etc
+4.0K	/tmp
+0	/srv
+0	/media
+0	/boot
+
+👤 Your Home Directory (Top 10):
+22G	/home/wholesomedegenerate
+13G	/home/wholesomedegenerate/.cache
+2.8G	/home/wholesomedegenerate/.config
+1.2G	/home/wholesomedegenerate/.rustup
+883M	/home/wholesomedegenerate/myenv
+833M	/home/wholesomedegenerate/ai_spotibot_player
+755M	/home/wholesomedegenerate/.local
+442M	/home/wholesomedegenerate/Local Sites
+340M	/home/wholesomedegenerate/node_modules
+288M	/home/wholesomedegenerate/.vscode
+
+✅ Done. Consider running `sudo apt autoremove && sudo apt clean` if space is tight.
+----------------------------------------
