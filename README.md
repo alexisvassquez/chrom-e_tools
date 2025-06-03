@@ -122,6 +122,6 @@ This will:
 
 ## License
 MIT License
-Copyright (c) and maintained by [Alexis M Vasquez](https://github.com/alexisvassquez), *Full-Stack Software Engineer, Coding Enthusiast.*
+Copyright (c) and maintained by [Alexis M Vasquez](https://github.com/alexisvassquez), *Full-Stack Software Engineer, System Administrator, Coding Enthusiast.*
 Permission is hereby granted, free of charge, to any person obtaining a copy.
 
