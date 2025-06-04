@@ -22,7 +22,7 @@ These scripts are CLI-first utilities designed to help:
 - Clean your system's clutter (cache, dead kernels, and more)
 - Monitor memory, disk, and CPU usage
 - Stay lightweight while developing high-impact projects
-- Learn foundational Linux hygiene practices'
+- Learn foundational Linux hygiene practices
 
 If you're a developer working from an old laptop, a budget device, or even a low-end setup - you're not alone. This repo is for you.
 
@@ -71,7 +71,7 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 - `memory_report.sh` - Visualize your memory, swap, and process usage.
 - `disk_usage_report.sh` - Show top 20 space-hogging directories.
 - `send_usage_summary.sh` - Generates a disk usage report, archives it, and emails an automated monthly report to recipient's configured address.
-- `chrom-e_healthcheck.sh` - Full diagnostic report (RAM, CPU, load avg).
+- `chrom-e_healthcheck.sh 💾` - Full diagnostic report (RAM, CPU, load avg).
 - `optimize_io.sh` - Boosts disk I/O performance with smart syncs and trim
 - `audio_flush.sh` - Clears PulseAudio caches and resets audio pipeline
 - `--bootles-wootles` - Silent mode in scripts for automation

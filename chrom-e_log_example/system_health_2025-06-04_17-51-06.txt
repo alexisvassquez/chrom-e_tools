@@ -1,0 +1,64 @@
+🔍 Chrom-E Health Check Report
+Generated on: Wed Jun  4 05:51:06 PM EDT 2025
+Hostname: penguin
+User: wholesomedegenerate
+--------------------------------------
+
+🕛 Uptime:
+up 57 minutes
+ 17:51:06 up 57 min,  0 user,  load average: 1.07, 1.07, 1.02
+
+🧠 CPU Info:
+CPU(s):                               2
+On-line CPU(s) list:                  0,1
+Model name:                           Intel(R) Celeron(R) CPU N3350 @ 1.10GHz
+Thread(s) per core:                   1
+Core(s) per socket:                   1
+Socket(s):                            2
+
+💾 Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:           2.7Gi       125Mi       2.0Gi       2.2Mi       537Mi       2.6Gi
+Swap:             0B          0B          0B
+
+🗃️  Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vdb         40G   31G  8.9G  78% /
+none            492K  4.0K  488K   1% /dev
+/dev/vdb         40G   31G  8.9G  78% /dev/kvm
+tmpfs           100K     0  100K   0% /dev/lxd
+run             1.4G   24K  1.4G   1% /dev/.cros_milestone
+9p              1.9G  1.3M  1.9G   1% /mnt/chromeos
+tmpfs           1.4G     0  1.4G   0% /mnt/external
+/dev/vda         72M   71M     0 100% /opt/google/cros-containers
+fonts           2.0G  1.3G  667M  67% /usr/share/fonts/chromeos
+tmpfs           100K     0  100K   0% /dev/.lxd-mounts
+devtmpfs        1.4G     0  1.4G   0% /dev/tty
+tmpfs           1.4G     0  1.4G   0% /dev/shm
+tmpfs           552M  128K  552M   1% /run
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+tmpfs           276M   20K  276M   1% /run/user/1000
+
+📊 Load Average:
+1.07 1.07 1.02 3/190 2889
+
+🌋 Top 5 CPU Processes:
+  PID  PPID CMD                         %MEM %CPU
+  320   264 /opt/google/cros-containers  1.2  3.8
+  417   397 /opt/google/cros-containers  0.3  0.1
+  203     1 /lib/systemd/systemd --user  0.3  0.1
+  397   203 /opt/google/cros-containers  0.6  0.1
+   68     1 /lib/systemd/systemd-journa  0.6  0.1
+
+🪫 Top 5 Memory Processes:
+  PID  PPID CMD                         %MEM %CPU
+  159     1 /usr/bin/python3 /usr/bin/g  1.8  0.1
+  319   265 /opt/google/cros-containers  1.2  0.0
+  320   264 /opt/google/cros-containers  1.2  3.8
+   68     1 /lib/systemd/systemd-journa  0.6  0.1
+  397   203 /opt/google/cros-containers  0.6  0.1
+
+🌡️ CPU Temperature:
+⚠️  No temperature sensors detected. This is normal for sandboxed containers.
+ℹ️  Run 'sudo sensors-detect' outside the container or refer to https://wiki.archlinux.org/title/lm_sensors for advanced setup.
