@@ -78,6 +78,28 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 
 ---
 
+## Bootles Wootles
+Hidden within the Chrom-E Power Toolkit lies a secret flag known only to those with a keen eye and a curious heart:
+
+```bash
+chrom-e --bootles
+```
+
+This command does not optimize, clean, or diagnose. Instead, it **summons Bootles Wootles** - the mystical tuxedo cat spirit with a mustache who watches over your system. Bootles appears in glorious ASCII form and delivers a randomized cryptic message of purformance wisdowm.
+
+Some say he's a daemon.
+Some say he's a familiar.
+Some say he once clawed the kernel and lived to tell the tale.
+
+> Bootles Wootles was here. And your system has been purformed.
+
+You may never truly understand him.
+But if you run the command, he will understand **you.**
+
+🪄 `chrom-e --bootles`
+
+---
+
 ## Requirements
 - Bash (v4.0+ recommended)
 - GNU Coreutils (`df`, `du`, `sort`, `grep`, etc.)
