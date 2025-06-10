@@ -1,7 +1,8 @@
 #!/bin/bash
 
-# Chrom-E Health Check Script
+# Chrom-E Health Check Script v1.1
 # Generates a full system diagnostic report
+# Includes --bootles-wootles mode 
 
 LOG_DIR="$HOME/chrom-e_log"
 LOG_FILE="$LOG_DIR/system_health_$(date '+%Y-%m-%d_%H-%M-%S').txt"
@@ -9,11 +10,32 @@ LOG_FILE="$LOG_DIR/system_health_$(date '+%Y-%m-%d_%H-%M-%S').txt"
 # Ensure log directory exists
 mkdir -p "$LOG_DIR"
 
+# --bootles-wootles mode
+brief_mode=false
+
+if [[ "$1" == "--bootles-wootles" ]]; then
+    brief_mode=true
+    echo -e "🗨️  Bootles Wootles Mode Activated"
+    echo -e "💬 Performing brief system check...hold still."
+    echo -e "--------------------------------------"
+fi
+
+# Begin Report
 echo "🔍 Chrom-E Health Check Report" | tee "$LOG_FILE"
 echo "Generated on: $(date)" | tee -a "$LOG_FILE"
 echo "Hostname: $(hostname)" | tee -a "$LOG_FILE"
 echo "User: $USER" | tee -a "$LOG_FILE"
 echo "--------------------------------------" | tee -a "$LOG_FILE"
+
+# Basic infor for --bootles-wootles Mode
+if $brief_mode; then
+    echo -e "\n🕛 Uptime: $(uptime -p)" | tee -a "$LOG_FILE"
+    echo -e "\n💾 RAM Used: $(free -h | awk '/Mem:/ {print $3 " of " $2}')" | tee -a "$LOG_FILE"
+    echo -e "\n🗃️ Disk Used: $(df -h / | awk 'NR==2 {print $3 " of " $2}')\n" | tee -a "$LOG_FILE"
+    echo -e "\n👀 Bootles Wootles Mode Successful. All is well." | tee -a "$LOG_FILE"
+    echo -e "\n✅ Brief report saved to: $LOG_FILE"
+    exit 0
+fi
 
 # Uptime
 echo -e "\n🕛 Uptime:" | tee -a "$LOG_FILE"
