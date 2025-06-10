@@ -1,0 +1,48 @@
+[2025-06-10 16:33:31] 🔧 Starting I/O performance optimization....
+[2025-06-10 16:33:31] ⏭️ Skipped virtual device: loop0
+[2025-06-10 16:33:31] ⏭️ Skipped virtual device: loop1
+[2025-06-10 16:33:32] ⏭️ Skipped virtual device: loop2
+[2025-06-10 16:33:32] ⏭️ Skipped virtual device: loop3
+[2025-06-10 16:33:32] ⏭️ Skipped virtual device: loop4
+[2025-06-10 16:33:32] ⏭️ Skipped virtual device: loop5
+[2025-06-10 16:33:33] ⏭️ Skipped virtual device: loop6
+[2025-06-10 16:33:33] ⏭️ Skipped virtual device: loop7
+[2025-06-10 16:33:33] ⏭️ Skipped virtual device: vda
+[2025-06-10 16:33:33] ⏭️ Skipped virtual device: vdb
+[2025-06-10 16:33:36] ❌ Failed to set dirty cache ratios (permission denied)
+[2025-06-10 16:33:49] ❌ Failed to drop filesystem caches (permission denied)
+[2025-06-10 16:33:54] ❌ Failed to set swappiness (permission denied)
+[2025-06-10 16:33:54] ⚠️ Note: These changes are not persistent and will reset on reboot.
+[2025-06-10 16:33:54] 🎯 I/O optimization script completed successfully.
+[2025-06-10 16:52:23] 🔧 Starting I/O performance optimization....
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: loop0
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: loop1
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: loop2
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: loop3
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: loop4
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: loop5
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: loop6
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: loop7
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: vda
+[2025-06-10 16:52:23] ⏭️ Skipped virtual device: vdb
+[2025-06-10 16:52:26] ⚠️ Cannot modify dirty ratios. Likely restricted by sandbox (Crostini or container).
+[2025-06-10 16:52:31] ⚠️ Cannot drop caches. Likely restricted by sandbox (Crostini or container).
+[2025-06-10 16:52:36] ⚠️ Cannot modify swappiness. Likely restricted by sandbox (Crostini or container).
+[2025-06-10 16:52:36] ⚠️ Note: These changes are not persistent and will reset on reboot.
+[2025-06-10 16:52:36] 🎯 I/O optimization script completed successfully.
+[2025-06-10 16:53:22] 🔧 Starting I/O performance optimization....
+[2025-06-10 16:53:22] ⏭️ Skipped virtual device: loop0
+[2025-06-10 16:53:23] ⏭️ Skipped virtual device: loop1
+[2025-06-10 16:53:23] ⏭️ Skipped virtual device: loop2
+[2025-06-10 16:53:23] ⏭️ Skipped virtual device: loop3
+[2025-06-10 16:53:23] ⏭️ Skipped virtual device: loop4
+[2025-06-10 16:53:23] ⏭️ Skipped virtual device: loop5
+[2025-06-10 16:53:23] ⏭️ Skipped virtual device: loop6
+[2025-06-10 16:53:23] ⏭️ Skipped virtual device: loop7
+[2025-06-10 16:53:23] ⏭️ Skipped virtual device: vda
+[2025-06-10 16:53:23] ⏭️ Skipped virtual device: vdb
+[2025-06-10 16:53:25] ⚠️ Cannot modify dirty ratios. Likely restricted by sandbox (Crostini or container).
+[2025-06-10 16:53:28] ⚠️ Cannot drop caches. Likely restricted by sandbox (Crostini or container).
+[2025-06-10 16:53:30] ⚠️ Cannot modify swappiness. Likely restricted by sandbox (Crostini or container).
+[2025-06-10 16:53:30] ℹ️ Note: These changes are not persistent and will reset on reboot.
+[2025-06-10 16:53:30] 🎯 I/O optimization script completed successfully.
