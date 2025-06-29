@@ -66,14 +66,17 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 
 ---
 
-## Script Index (more on the way)
+## Script Index (recurring updates)
 - `chrom-e_cli_cleaner.sh` - Clear cache, remove stale logs, clean apt packages, temporary files, and find what's eating your storage.
 - `memory_report.sh` - Visualize your memory, swap, and process usage.
 - `disk_usage_report.sh` - Show top 20 space-hogging directories.
 - `send_usage_summary.sh` - Generates a disk usage report, archives it, and emails an automated monthly report to recipient's configured address.
-- `chrom-e_healthcheck.sh 💾` - Full diagnostic report (RAM, CPU, load avg).
-- `optimize_io.sh` - Boosts disk I/O performance with smart syncs and trim
-- `audio_flush.sh` - Clears PulseAudio caches and resets audio pipeline
+- `chrom-e_healthcheck.sh` - 💾 Full diagnostic report (RAM, CPU, load avg).
+- `optimize_io.sh` - Boosts disk I/O performance with smart syncs and trim.
+- `boost_cpu_governor.sh` - Backup your current CPU-freq governors, switch all cores to **performance** mode, and restore previous settings on demand.
+- `audio_flush.sh` - Clears PulseAudio caches and resets audio pipeline.
+- `chrom-e_help.sh` - Global project README and guide via CLI.
+- `install_chrom-e.sh` - Installs `chrom-e` as a global help command.
 - `--bootles-wootles` - Silent mode in scripts for automation
 
 ---
