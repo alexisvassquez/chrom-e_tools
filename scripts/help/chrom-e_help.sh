@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 📘 Chrom-E Power Toolkit: Help Index
+# 📘 Chrom-E's Power Toolkit: Help Index
 # Run this script with ./chrom-e_help.sh or symlink as ./chrom-e --help
 
 # Bootles ASCII + Quote Engine
@@ -43,23 +43,18 @@ fi
 # Special message if script is symlinked as `chrom-e`
 SCRIPT_NAME="$(basename "$(readlink "0" 2>/dev/null || echo "$0")")"
 if [[ "$SCRIPT_NAME" == "chrom-e" ]]; then
-    echo -e "👋 Welcome to Chrom-E, your terminal sidekick."
+    echo -e "👋 Welcome to Chrom-E's Power Toolkit, your terminal sidekick."
     print_bootles-wootles
 fi
 
 # Main Help menu
-echo -e "💾 Chrom-E Power Toolkit Help Menu"
+echo -e "💾 Chrom-E's Power Toolkit Help Menu"
 echo "────────────────────────────────────────────"
-echo -e "This terminal-based toolkit is designed for Linux systems, Crostini, and other sandboxed containers in need of a boost." 
+echo -e "This CLI-first toolkit is designed to optimize, secure, and maintain your Linux or containerized environment.\n" 
 echo -e "Created by developers Alexis M Vasquez & Juniper.\n"
 
-echo -e "🧪 Available Scripts:"
+echo -e "🧪 System Optimization:"
 echo -e "  ./chrome-e_healthcheck.sh  →  Full system diagnostic"
-echo -e "    --bootles-wootles        →  Brief or silent-mode purformance system summary"
-echo -e "    --log-path               →  Show where reports are saved"
-echo -e "    --help                   →  Show help for healthcheck script"
-echo ""
-
 echo -e "  ./memory_report.sh         →  Show used/free memory and swap usage"
 echo -e "  ./disk_usage_report.sh     →  Overview of mounted disk usage"
 echo -e "  ./send_usage_summary.sh    →  Email a usage summary report via s-nail"
@@ -68,12 +63,33 @@ echo -e "  ./optimize_io.sh           →  Trim & sync SSD for faster disk I/O"
 echo -e "  ./boost_cpu_governor.sh    →  Backup & switch CPU governor to performance (with restore)"
 echo ""
 
-echo -e "📋 Scripts In Queue (Development-mode):"
+echo -e "🔐 Networking & Cybersecurity:"
+echo -e "  ./network_status.sh        →  View IP, active connections, reverse DNS + geoIP"
+echo -e "  ./check_listeners.sh       →  Flag suspicious listening ports & processes"
+echo ""
+
+echo -e "🔊 Audio Management:"
 echo -e "  ./audio_flush.sh           →  Clear PulseAudio caches & restart audio"
-echo -e "  ./network_status.sh        →  View IP, Wi-Fi signal, DNS, and ping"
+echo ""
+
+echo -e "📚 Documentation & Utilities:"
+echo -e "  ./chrom-e_help.sh          →  This help menu"
+echo -e "  ./install_chrom-e.sh       →  Install global help command"
+echo -e "    --bootles-wootles        →  Brief or silent-mode purformance system summary"
+echo -e "    --log-path               →  Show where reports are saved"
+echo -e "    --help                   →  Show help for healthcheck script"
+echo ""
+
+echo -e "📋 Scripts In Queue (Development-mode):"
 echo -e "  ./cpu_temp_monitor.sh      →  Monitor CPU temps in °C and °F"
 echo -e "  ./uptime_report.sh         →  Show system uptime and login count"
 echo -e "  ./junk_finder.sh           →  Find & optionally delete common clutter"
+echo -e "  ./refresh_swap.sh          →  Recreate swap file and reinitialize to clear swap clutter"
+echo -e "  ./fix_mic.sh               →  Detect and reset faulty mic configs or reroute to working input."
+echo -e "  ./clean_snap_flatpak.sh    →  Clears unused Snap/Flatpak app cache."
+echo -e "  ./watch_network.sh         →  Watch for persistent connections to blacklisted corporate telemetry IP ranges in real-time."
+echo -e "  ./brightness_lock.sh       →  Override auto-dimming and keep brightness consistent."
+echo -e "And more...recurring updates!"
 echo ""
 
 echo -e "💡 Usage Tips:"
@@ -84,4 +100,4 @@ echo ""
 
 echo -e "📘 Repo: https://github.com/alexisvassquez/chrom-e_tools"
 echo -e "🧙 Developed by: Alexis M Vasquez (Software Engineer, Full-Stack Developer, SysAdmin) and executive assistant, Juniper"
-echo -e "🦾 Create Change Through Code. Fewer Clicks, More Power, All Floppy." 
+echo -e "🦾 Create Change Through Code."
