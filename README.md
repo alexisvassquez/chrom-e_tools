@@ -66,7 +66,7 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 
 ---
 
-## Script Index (recurring updates)
+## 📜 Script Index (recurring updates)
 - `chrom-e_cli_cleaner.sh` - Clear cache, remove stale logs, clean apt packages, temporary files, and find what's eating your storage.
 - `memory_report.sh` - Visualize your memory, swap, and process usage.
 - `disk_usage_report.sh` - Show top 20 space-hogging directories.
@@ -77,13 +77,24 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 - `audio_flush.sh` - Clears PulseAudio caches and resets audio pipeline.
 - `chrom-e_help.sh` - Global project README and guide via CLI.
 - `install_chrom-e.sh` - Installs `chrom-e` as a global help command.
-- `network_trace.sh` - Shows current active connections + traceroute summary.
-- `--bootles-wootles` - Silent mode in scripts for automation
+
+### 🔐 Networking & Cybersecurity Utilities
+- `network_trace.sh` - Shows current active connections + traceroute summary, performs reverse DNS + geoIP check, and flags suspicious connections.
+- `check_listeners.sh` - Scans for *listening* ports, detects unknown services, and flags potential suspicious processes.
 
 ---
 
-## Bootles Wootles
-Hidden within the Chrom-E Power Toolkit lies a secret flag known only to those with a keen eye and a curious heart:
+## 🛡️ Cybersecurity & Privacy Protection
+**Chrom-E** isn't just here to clean and optimize - he's also your first line of defense. **Chrom-E's Power Toolkit** also contains new security scripts that help detect, trace, and shut down corporate telemetry, hidden backdoors, and rogue services in your container or Linux system. Defend your dev environment and keep your sandbox clean!
+
+---
+
+## 📚 Help Menu (quick reference)
+Use `chrom-e_help.sh` or `chrom-e --help` to view:
+- Script descriptions & usage
+- Upcoming scripts in queue
+- Pro tips for maintenance & system hygiene
+- Bootles Wootles (your resident terminal guardian spirit who also automates your scripts in silent mode). To run:
 
 ```bash
 chrom-e --bootles
@@ -100,17 +111,18 @@ Some say he once clawed the kernel and lived to tell the tale.
 You may never truly understand him.
 But if you run the command, he will understand **you.**
 
-🪄 `chrom-e --bootles`
+🪄 `chrom-e --bootle`
 
 ---
 
 ## Requirements
 - Bash (v4.0+ recommended)
 - GNU Coreutils (`df`, `du`, `sort`, `grep`, etc.)
-- sudo privileges (for accurate `du` readings on system directories)
+- `lsof` (for network tracing scripts)
+- `sudo` privileges (for accurate `du` readings on system directories)
 - `htop` (optional, for advanced process stats)
 - `s-nail` (or a modern `mailx` implementation with SMTP support)
-- `cron` (for automated monthly reporting)
+- `cron` (optional, for automated monthly reporting)
 
 ---
 
@@ -123,7 +135,7 @@ But if you run the command, he will understand **you.**
 
 - Make the scripts executable
     ```bash
-    chmod +x SCRIPT_NAME.sh`
+    chmod +x <script_name>.sh`
     ```
 
 ### For Automated Monthly Email Reports
@@ -151,3 +163,4 @@ MIT License
 Copyright (c) and maintained by [Alexis M Vasquez](https://github.com/alexisvassquez), *Full-Stack Software Engineer, System Administrator, Coding Enthusiast.*
 Permission is hereby granted, free of charge, to any person obtaining a copy.
 
+> 🦾 Create Change Through Code.
