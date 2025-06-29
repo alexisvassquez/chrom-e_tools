@@ -77,6 +77,7 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 - `audio_flush.sh` - Clears PulseAudio caches and resets audio pipeline.
 - `chrom-e_help.sh` - Global project README and guide via CLI.
 - `install_chrom-e.sh` - Installs `chrom-e` as a global help command.
+- `network_trace.sh` - Shows current active connections + traceroute summary.
 - `--bootles-wootles` - Silent mode in scripts for automation
 
 ---
