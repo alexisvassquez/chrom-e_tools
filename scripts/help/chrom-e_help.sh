@@ -72,6 +72,9 @@ echo -e "🔊 Audio Management:"
 echo -e "  ./audio_flush.sh           →  Clear PulseAudio caches & restart audio"
 echo ""
 
+echo -e "🛠️ Maintenance:"
+echo -e "  ./package_audit.sh         →  Audit installed, outdated & orphaned packages with bloat score"
+
 echo -e "📚 Documentation & Utilities:"
 echo -e "  ./chrom-e_help.sh          →  This help menu"
 echo -e "  ./install_chrom-e.sh       →  Install global help command"
@@ -96,6 +99,7 @@ echo -e "💡 Usage Tips:"
 echo -e "- Make a script executable: chmod +x <scriptname>"
 echo -e "- Run a script: ./<scriptname>.sh"
 echo -e "- All logs are saved to: ~/chrom-e_log/"
+echo -e "- Run with Bootles wisdom: ./package_audit.sh --bootles-wootles"
 echo ""
 
 echo -e "📘 Repo: https://github.com/alexisvassquez/chrom-e_tools"
