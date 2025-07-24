@@ -111,7 +111,7 @@ Some say he once clawed the kernel and lived to tell the tale.
 You may never truly understand him.
 But if you run the command, he will understand **you.**
 
-🪄 `chrom-e --bootls`
+🪄 `chrom-e --bootes`
 
 ---
 
