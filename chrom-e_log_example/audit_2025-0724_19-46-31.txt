@@ -1,0 +1,219 @@
+Chrom-E's Package Audit Tool
+──────────────────────────────────────────────
+🧠 Detected Distro: Debian GNU/Linux 12 (bookworm)
+
+🔍 User-Installed Packages:
+adb
+adduser
+alsa-utils
+apt
+apt-transport-https
+apt-utils
+base-files
+base-passwd
+bash
+bridge-utils
+bsdutils
+build-essential
+ca-certificates
+clang
+cmake
+cmdtest
+coreutils
+cpio
+cpu-checker
+cron
+cros-apt-config
+cros-guest-tools
+curl
+dash
+debconf
+debian-archive-keyring
+debianutils
+deborphan
+diffutils
+dnf
+dnsutils
+dpkg
+e2fsprogs
+fastboot
+ffmpeg
+findutils
+flatpak
+g++
+gcc-12-base
+git
+glances
+google-chrome-stable
+google-cloud-sdk
+gpg
+gpgv
+grep
+gzip
+hostname
+htop
+ifupdown
+init
+init-system-helpers
+iproute2
+iputils-ping
+isc-dhcp-client
+jq
+less
+lib32z1
+libacl1
+libapt-pkg6.0
+libasound2-dev
+libattr1
+libaudit1
+libaudit-common
+libblkid1
+libbz2-1.0
+libc6
+libcap2
+libcap-ng0
+libc-bin
+libcom-err2
+libcrypt1
+libdb5.3
+libdebconfclient0
+libext2fs2
+libffi8
+libfile-find-rule-perl
+libgcc-s1
+libgcrypt20
+libgdbm6
+libgdbm-compat4
+libglu1-mesa
+libgmp10
+libgnutls30
+libgpg-error0
+libgtk-3-dev
+libhogweed6
+libidn2-0
+libjack-jackd2-dev
+liblz4-1
+liblzma5
+libmd0
+libmount1
+libnettle8
+libnumber-compare-perl
+libp11-kit0
+libpam0g
+libpam-modules
+libpam-modules-bin
+libpam-runtime
+libpcre2-8-0
+libperl5.36
+libportaudio2
+libseccomp2
+libselinux1
+libsemanage2
+libsemanage-common
+libsepol2
+libsmartcols1
+libss2
+libssl3
+libstdc++6
+libsystemd0
+libtasn1-6
+libtext-glob-perl
+libtinfo6
+libudev1
+libunistring2
+libuuid1
+libvirt-clients
+libvirt-daemon-system
+libxxhash0
+libzstd1
+lm-sensors
+local
+locales
+login
+logsave
+lsof
+mailutils
+mawk
+mesa-utils
+mount
+nano
+ncurses-base
+ncurses-bin
+netbase
+net-tools
+nodejs
+npm
+openjdk-17-jdk
+openssh-client
+openssl
+passwd
+perl
+perl-base
+perl-modules-5.36
+portaudio19-dev
+powerline
+procps
+pulseaudio
+python3
+python3.11
+python3-dev
+python3-pip
+python3-tk
+python3-torch
+python3-venv
+qemu-system-x86
+sdkmanager
+sed
+s-nail
+snapd
+software-properties-common
+sudo
+sysvinit-utils
+tar
+telnet
+time
+traceroute
+tree
+tzdata
+unzip
+usrmerge
+util-linux
+util-linux-extra
+uvicorn
+vim
+wget
+whiptail
+whois
+xz-utils
+zip
+zlib1g
+
+⬆️ Outdated Packages:
+
+
+🧹 Orphaned Packages (libs with no dependents):
+🔎 apt-transport-https -> ⚠️ Reverse deps found:
+    - Reverse Depends:
+    -   apt
+    -   apt
+🔎 dnsutils -> ⚠️ Reverse deps found:
+    - Reverse Depends:
+    -   bind9-dnsutils
+    -   bind9-dnsutils
+🔎 lib32z1 -> ⚠️ Reverse deps found:
+    - Reverse Depends:
+🔎 libayatana-appindicator3-1 -> ⚠️ Reverse deps found:
+    - Reverse Depends:
+🔎 libglu1-mesa -> ⚠️ Reverse deps found:
+    - Reverse Depends:
+🔎 telnet -> ⚠️ Reverse deps found:
+    - Reverse Depends:
+
+📊 Totals:
+User-installed: 184
+Outdated:       1
+Orphaned:       0
+
+💡 Bloat Score: 185 -> [1;35m🌯 Getting Chunky[0m
+
+✅ Package audit complete.

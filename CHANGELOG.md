@@ -18,6 +18,7 @@
 - New script: `package_audit.sh` audits user-installed, outdated, and orphaned packages across supported distros.
 - Bootles Wootles offers randomized bloat wisdom with `--bootles-wootles`.
 - Bloat score has ANSI color output!
+- Includes support for multiple Linux distros
 
 ### Fixed
 - Removed unstable `comm` + gzip method for manual package detection (Debian-based)
