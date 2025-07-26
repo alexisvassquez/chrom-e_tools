@@ -1,0 +1,19 @@
+3,4d2
+< /usr/bin/chfn
+< /usr/bin/chsh
+6c4
+< /usr/bin/gpasswd
+---
+> /usr/bin/su
+7a6,7
+> /usr/bin/umount
+> /usr/bin/pkexec
+8a9,11
+> /usr/bin/chfn
+> /usr/bin/chsh
+> /usr/bin/gpasswd
+10,11d12
+< /usr/bin/pkexec
+< /usr/bin/su
+13d13
+< /usr/bin/umount

@@ -1,0 +1,18 @@
+/opt/google/chrome/chrome-sandbox
+/opt/Local/chrome-sandbox
+/usr/bin/chfn
+/usr/bin/chsh
+/usr/bin/fusermount3
+/usr/bin/gpasswd
+/usr/bin/mount
+/usr/bin/newgrp
+/usr/bin/passwd
+/usr/bin/pkexec
+/usr/bin/su
+/usr/bin/sudo
+/usr/bin/umount
+/usr/lib/dbus-1.0/dbus-daemon-launch-helper
+/usr/lib/openssh/ssh-keysign
+/usr/lib/polkit-1/polkit-agent-helper-1
+/usr/lib/snapd/snap-confine
+❕ Review any unusual paths or binaries. Most legit SUIDs live in /bin, /usr/bin, /sbin.
