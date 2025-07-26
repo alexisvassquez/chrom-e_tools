@@ -25,3 +25,27 @@
 - Fixed `/dev/fd` permission error by switching to safer direct `apt-mark` logic
 - Enhanced orphan detection with reverse dependency safety checks
 
+---
+
+## [v1.6] – 2025-07-25
+### Security Enhancements
+- Added `suid_sweep.sh` to `security/` directory.
+  - Scans system for all SUID binaries and saves output to `~/chrom-e_log/security/`.
+  - Includes `--diff` flag to compare current scan against baseline and detect new or modified binaries.
+  - Automatically timestamps logs and preserves previous states.
+  - Added smart logging via `log_note()` helper for consistent dual output (terminal + log file).
+  - Introduced audit-friendly messaging with clear remediation notes.
+
+### Toolkit Framework
+- Introduced `log_note()` reusable helper function to standardize log + echo output across scripts.
+- Improved UX clarity in logs when no changes are found during `--diff` mode.
+- Ensured log retention logic works reliably and provides human-readable closure in all cases.
+
+### Documentation + Help Menu
+- Updated `chrom-e_help.sh` to include `suid_sweep.sh` under `🔐 Security Scripts` with `--diff` usage.
+- Prepared structure for upcoming `ux/` directory in the help output.
+
+---
+
+> Next planned: Modular `lib/helpers.sh`, more maintenance scripts, and initial UX enhancements.
+

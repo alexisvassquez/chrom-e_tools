@@ -48,12 +48,12 @@ if [[ "$SCRIPT_NAME" == "chrom-e" ]]; then
 fi
 
 # Main Help menu
-echo -e "💾 Chrom-E's Power Toolkit Help Menu"
+echo -e "💾  Chrom-E's Power Toolkit Help Menu"
 echo "────────────────────────────────────────────"
 echo -e "This CLI-first toolkit is designed to optimize, secure, and maintain your Linux or containerized environment.\n" 
 echo -e "Created by developers Alexis M Vasquez & Juniper.\n"
 
-echo -e "🧪 System Optimization:"
+echo -e "🧪  System Optimization:"
 echo -e "  ./chrome-e_healthcheck.sh  →  Full system diagnostic"
 echo -e "  ./memory_report.sh         →  Show used/free memory and swap usage"
 echo -e "  ./disk_usage_report.sh     →  Overview of mounted disk usage"
@@ -63,19 +63,21 @@ echo -e "  ./optimize_io.sh           →  Trim & sync SSD for faster disk I/O"
 echo -e "  ./boost_cpu_governor.sh    →  Backup & switch CPU governor to performance (with restore)"
 echo ""
 
-echo -e "🔐 Networking & Cybersecurity:"
+echo -e "🔐  Networking & Cybersecurity:"
 echo -e "  ./network_status.sh        →  View IP, active connections, reverse DNS + geoIP"
 echo -e "  ./check_listeners.sh       →  Flag suspicious listening ports & processes"
+echo -e "  ./suid_sweep.sh            →  Scan system for SUID binaries and log results"
+echo -e "    --diff                   →  Compare current scan to baseline"
 echo ""
 
-echo -e "🔊 Audio Management:"
+echo -e "🔊  Audio Management:"
 echo -e "  ./audio_flush.sh           →  Clear PulseAudio caches & restart audio"
 echo ""
 
-echo -e "🛠️ Maintenance:"
+echo -e "🛠️  Maintenance:"
 echo -e "  ./package_audit.sh         →  Audit installed, outdated & orphaned packages with bloat score"
 
-echo -e "📚 Documentation & Utilities:"
+echo -e "📚  Documentation & Utilities:"
 echo -e "  ./chrom-e_help.sh          →  This help menu"
 echo -e "  ./install_chrom-e.sh       →  Install global help command"
 echo -e "    --bootles-wootles        →  Brief or silent-mode purformance system summary"
@@ -83,7 +85,7 @@ echo -e "    --log-path               →  Show where reports are saved"
 echo -e "    --help                   →  Show help for healthcheck script"
 echo ""
 
-echo -e "📋 Scripts In Queue (Development-mode):"
+echo -e "📋  Scripts In Queue (Development-mode):"
 echo -e "  ./cpu_temp_monitor.sh      →  Monitor CPU temps in °C and °F"
 echo -e "  ./uptime_report.sh         →  Show system uptime and login count"
 echo -e "  ./junk_finder.sh           →  Find & optionally delete common clutter"
@@ -95,11 +97,12 @@ echo -e "  ./brightness_lock.sh       →  Override auto-dimming and keep bright
 echo -e "And more...recurring updates!"
 echo ""
 
-echo -e "💡 Usage Tips:"
+echo -e "💡  Usage Tips:"
 echo -e "- Make a script executable: chmod +x <scriptname>"
-echo -e "- Run a script: ./<scriptname>.sh"
+echo -e "- Run a script: ./scripts/<category>/<scriptname>.sh"
 echo -e "- All logs are saved to: ~/chrom-e_log/"
 echo -e "- Run with Bootles wisdom: ./package_audit.sh --bootles-wootles"
+echo -e "- Run ./suid_sweep.sh with --diff to compare binaries to baseline"
 echo ""
 
 echo -e "📘 Repo: https://github.com/alexisvassquez/chrom-e_tools"
