@@ -75,12 +75,14 @@ The infamous **"Play Store Ghost"** effect isn't a bug - it's a feature. It repr
 - `optimize_io.sh` - Boosts disk I/O performance with smart syncs and trim.
 - `boost_cpu_governor.sh` - Backup your current CPU-freq governors, switch all cores to **performance** mode, and restore previous settings on demand.
 - `audio_flush.sh` - Clears PulseAudio caches and resets audio pipeline.
+- `package_audit.sh` - Audit installed, outdated & orphaned packages with bloat score. 
 - `chrom-e_help.sh` - Global project README and guide via CLI.
 - `install_chrom-e.sh` - Installs `chrom-e` as a global help command.
 
 ### 🔐 Networking & Cybersecurity Utilities
 - `network_trace.sh` - Shows current active connections + traceroute summary, performs reverse DNS + geoIP check, and flags suspicious connections.
 - `check_listeners.sh` - Scans for *listening* ports, detects unknown services, and flags potential suspicious processes.
+- `suid_sweep.sh` - Scan for SUID binaries, with --diff support for baseline monitoring.
 
 ---
 
@@ -135,7 +137,7 @@ But if you run the command, he will understand **you.**
 
 - Make the scripts executable
     ```bash
-    chmod +x <script_name>.sh`
+    chmod +x scripts/<category>/<script_name>.sh`
     ```
 
 ### For Automated Monthly Email Reports
