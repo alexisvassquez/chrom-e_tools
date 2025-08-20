@@ -76,6 +76,7 @@ echo ""
 
 echo -e "🛠️  Maintenance:"
 echo -e "  ./package_audit.sh         →  Audit installed, outdated & orphaned packages with bloat score"
+echo -e "  ./temp_file_tracker.sh     →  Find biggest files in temp/cache dirs (size filter, top-N)"
 
 echo -e "📚  Documentation & Utilities:"
 echo -e "  ./chrom-e_help.sh          →  This help menu"
@@ -103,6 +104,7 @@ echo -e "- Run a script: ./scripts/<category>/<scriptname>.sh"
 echo -e "- All logs are saved to: ~/chrom-e_log/"
 echo -e "- Run with Bootles wisdom: ./package_audit.sh --bootles-wootles"
 echo -e "- Run ./suid_sweep.sh with --diff to compare binaries to baseline"
+echo -e "- Track temp hogs: ./temp_file_tracker.sh -s 50M -n 20 -t \"/tmp /var/tmp \$HOME/.cache\""
 echo ""
 
 echo -e "📘 Repo: https://github.com/alexisvassquez/chrom-e_tools"
