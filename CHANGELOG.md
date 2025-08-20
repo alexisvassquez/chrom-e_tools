@@ -47,5 +47,13 @@
 
 ---
 
-> Next planned: Modular `lib/helpers.sh`, more maintenance scripts, and initial UX enhancements.
+## [1.7.0] - 2025-08-20
+### Added
+- `temp_file_tracker.sh`: scan temp/cache directories and list top-N largest files with a size threshold.
+  - Flags: `-s/--min-size` (e.g., `10M`, `1G`), `-n/--limit`, `-t/--targets`.
+  - Summaries per directory + aggregate total across all targets.
+- Help menu entry: added `./temp_file_tracker.sh` under **Maintenance** in `chrom-e_help.sh`.
+- Usage tip: example invocation added to **Usage Tips** in `chrom-e_help.sh`.
 
+### Fixed
+- `temp_file_tracker.sh`: closed help heredoc delimiter and corrected `awk -v b="$1"` assignment in `hr_bytes()`.
